@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+<section>
+  <div class="container_despesa">
+    <h1>
+      DESPESAS
+    </h1>
+  </div>
+</section>
+<section>
+  <div class="container_date">
+    <label for="birthday">Data: </label>
+    <input type="date" id="birthday" name="birthday">
+</div>
+</section>
+<section>
+    <div class="container_despesas">
+        <table>
+          <thead>
+             <tr>
+              <th>DATA</th>
+              <th>VALOR</th>
+              <th>TIPO</th>
+              <th>S/N FIXO</th>
+              <th>DESCRIÇÃO</th>
+               <th>MENU</th>
+             </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let despesa of listDespesas">
+              <td>{{despesa.data}}</td>
+              <td>{{despesa.valor}}</td>
+              <td>{{despesa.tipo}}</td>
+              <td>{{despesa.descricao}}</td>
+              <td>{{despesa.fixo}}</td>
+              <td>
+                <div class="container_actions">
+                  <!--<mat-icon (click)="delete()"> delete</mat-icon-->
+                  <mat-icon (click)="edit(despesa)">edit</mat-icon>
+                </div>
+              </td>
+            </tr>
+          </tbody> 
+        </table>
+      </div>    
+</section>
+

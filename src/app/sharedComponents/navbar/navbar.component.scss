@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    background-color: chartreuse;
+    font-size: 18px;
+    padding: 12px;
+}
+
+.navbar-toogle{
+    margin: 8px 15px;
+    position: relative;
+    top: 10px;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+    color: black
+
+    mat-icon{
+        font-size: 30px;
+        vertical-align: text-bottom;
+    }
+}
+
+.logo{
+    display: inline-block;
+    margin-left: 15px;
+   img{
+       width: 50px;
+   } 
+}
+
+.main-nav{
+    list-style-type: none;
+
+    li{
+        text-align: center;
+        margin: 15px auto;
+
+        mat-icon{
+            vertical-align: text-bottom;
+
+        }
+    }
+}
+
+.nav-links{
+    text-decoration: none;   //tirar a linha de baixo
+    color: black;
+}
+
+
+
+.active{
+    display: block;
+}
+
+//mediaquerys para quando o tamanho for 769px
+
+@media screen and (min-width: 769px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav{
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        li{
+            margin: 0;
+
+                mat-icon{
+                    //vertical-align: middle;
+                   // display: inline-block;
+
+                    vertical-align: text-bottom;
+                    //margin-top: -5%;
+                }
+        }
+    }
+
+            
+    .sair{
+        padding-top: 5%;
+    }
+
+
+
+    .navbar-toogle{
+        display: none;
+    }
+
+    .nav-links:hover{
+        color: #fadf1a;
+    }
+
+    .nav-links{
+        margin-left: 40px;
+        vertical-align: text-bottom;
+    }
+
+    .logout{
+        display: flex;
+        cursor: pointer;   
+        width: 50%; 
+            
+    }
+    
+
+}
+

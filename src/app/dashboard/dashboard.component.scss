@@ -1,0 +1,168 @@
+.container-buttons{
+    float: right;
+    padding: 10px;
+
+    button{
+      margin: 10px;
+      color: #fff;  
+    }
+
+       
+    .button-receita{
+        background-color: #007BFF;
+    }
+
+    .button-despesa{
+        background-color: #c82333;
+    }
+}
+    /*
+    .button-receita{
+        background-color: #0069D9;
+    }
+
+    .button-despesa{
+        background-color: #c82333;
+    }
+}
+*/
+/*.container buttons: first child{
+    background-color: #0069D9;
+}
+
+.butt:nth-child(1){
+    background-color: #0069D9;
+}
+.butt:nth-child(2){
+    background-color: #c82333;
+} */
+
+.container_despesas{
+    height: 50vh;
+    width: 100%;
+    
+    .tb {
+    margin-top: -10px;
+    }
+
+    table{
+        border: 1px solid #ccc;
+        border-collapse: colapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+
+
+    }
+
+    table tr{
+        //background-color: #f8f8f8;
+        border: 1px solid #ddd;
+    }
+
+    table th, table td{
+        padding: .625em;
+        text-align: center;
+    }
+
+    table th{
+        font-size: .85em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+
+   
+        .rol1{
+            overflow-y: scroll;
+            height: 50%;
+        }
+   
+
+    td{
+        text-transform: uppercase;
+    }
+
+    thead tr{
+        background-color: red;
+        color: #fff;
+    }
+
+
+}
+
+.container_receitas{
+    height: 50vh;
+    width: 100%;
+    
+
+    table{
+        border: 1px solid #ccc;
+        border-collapse: colapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+ 
+    }
+
+    table tr{
+        //background-color: #f8f8f8;
+        border: 1px solid #ddd;
+    }
+
+    table th, table td{
+        padding: .625em;
+        text-align: center;
+    }
+
+    table th{
+        font-size: .85em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+
+    .rol2{
+        overflow-y: scroll;
+        height: 50%;
+    }
+
+    table td{
+        text-transform: uppercase;
+    }
+
+    thead tr{
+        background-color: #007bff;
+        color: #fff;
+    }
+
+}
+
+.container_title1{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container_title2{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container_actions{
+    display: flex;
+    justify-content: space-evenly;
+
+    mat-icon{
+        cursor: pointer;
+    }
+}
+
+.row{
+    overflow-y: scroll;
+}

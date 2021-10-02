@@ -1,0 +1,59 @@
+::ng-deep body{
+  background-image: linear-gradient( to right, rgb(149, 161, 214) 50%, rgb(200, 129, 241) );
+}
+
+ 
+:host{
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .example-card {
+      max-width: 400px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .example-header-image {
+      background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+      background-size: cover;
+    }
+  
+    .example-form {
+      min-width: 150px;
+      max-width: 500px;
+      width: 100%;
+    }
+    
+    .example-full-width {
+      width: 100%;
+    }
+  
+    .logo-span{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  
+  
+  .container-buttons{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .button-cancel{
+      color: #fff;
+      background-color: #C82333;
+  }
+
+  .button-save{
+      color: #fff;
+      background-color: #218838;
+  }
+
+  .section-container{
+    margin: 120px;
+  }
